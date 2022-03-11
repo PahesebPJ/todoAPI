@@ -21,7 +21,11 @@ app.use("/api/users",userAPI);
 var userProjectAPI = require("./controllers/userProjectController");
 app.use("/api/userprojects",userProjectAPI);
 
+var taskAPI = require("./controllers/taskController");
+app.use("/api/task",taskAPI);
 
+
+//App listening
 app.listen(process.env.PORT, () => {
     console.log(`App running on port ${process.env.PORT}!`)
 });

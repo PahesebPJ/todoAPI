@@ -14,7 +14,7 @@ router.get("/",(req,res) => {
             console.log("Error while fetching data");
         }
         res.json(data);
-    })
+    });
 });
 
 router.get("/:id",(req,res) => {
