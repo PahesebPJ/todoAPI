@@ -18,12 +18,14 @@ app.get('/', (req, res) => {
 var userAPI = require("./controllers/userController");
 app.use("/api/users",userAPI);
 
-var userProjectAPI = require("./controllers/userProjectController");
-app.use("/api/userprojects",userProjectAPI);
+var ProjectAPI = require("./controllers/ProjectController");
+app.use("/api/userprojects",ProjectAPI);
 
 var taskAPI = require("./controllers/taskController");
 app.use("/api/task",taskAPI);
 
+var userProjectAPI = require("./controllers/userprojectController");
+app.use("/api/userproject",userProjectAPI);
 
 //App listening
 app.listen(process.env.PORT, () => {
