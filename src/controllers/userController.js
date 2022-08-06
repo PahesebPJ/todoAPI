@@ -1,4 +1,4 @@
-const dbConnection  = require("../config/db_connection");
+const dbConnection  = require("../database/connection");
 
 var connection = dbConnection.getConnection();
 

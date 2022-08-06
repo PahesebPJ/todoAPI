@@ -1,4 +1,4 @@
-const dbConnection = require("../config/db_connection");
+const dbConnection = require("../databse/connection");
 
 var connection = dbConnection.getConnection();
 
