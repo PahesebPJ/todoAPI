@@ -7,6 +7,7 @@ var cors = require('cors');
 //Importing routes
 const loginRoute = require('./routes/login.routes');
 const taskRoute = require('./routes/task.routes');
+const projectRoute = require('./routes/projects.routes');
 
 //Middlewares
 app.use(cors());
@@ -16,6 +17,7 @@ app.use(express.static(__dirname + '/public')); //Middleware for serving static 
 //Routes
 app.use(loginRoute);
 app.use(taskRoute);
+app.use(projectRoute);
 
 //App listening
 app.listen(process.env.PORT, () => {

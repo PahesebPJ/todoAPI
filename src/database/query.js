@@ -5,5 +5,8 @@ module.exports = {
     task: {
         getAllTasks: 'SELECT * FROM task',
         getTaskById: 'SELECT * FROM task WHERE id = ?'
+    },
+    project: {
+        getAllProjects: 'SELECT * FROM project',
     }
 }
